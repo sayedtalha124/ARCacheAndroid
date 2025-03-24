@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvArError"
+        style="@style/sp12TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:elevation="20dp"
+        android:shadowColor="@color/grey"
+        android:text="Place your camera to a wall."
+        android:textColor="@color/white" />
+
+    <com.google.ar.sceneform.ArSceneView
+        android:id="@+id/arSceneView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingTop="1dp" />
+    <View
+        android:id="@+id/anchorPlace"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvArError" />
+    <ImageView
+        android:id="@+id/ivBack"
+        style="@style/sp16BoldTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:elevation="5dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_back"/>
+
+    <ImageView
+        android:id="@+id/buttonRotate"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/arrow_circle"
+        app:tint="@color/blue_300" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvTakeScreenshot"
+        style="@style/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="1dp"
+        android:maxWidth="150dp"
+        android:padding="0dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Save/Share"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:elevation="1dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvPlaceWindow"
+        style="@style/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="1dp"
+        android:maxWidth="150dp"
+        android:padding="0dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Place Window"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:elevation="1dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+</RelativeLayout>
