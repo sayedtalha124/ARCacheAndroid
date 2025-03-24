@@ -8,7 +8,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import arCore.DownloadAR
+import app.androidarcache.arCore.DownloadAR
 
 class SplashActivity : AppCompatActivity() {
     private val downloadVM: DownloadVM by viewModels()

@@ -3,14 +3,12 @@ package app.androidarcache
 import android.Manifest.permission.CAMERA
 import android.app.Dialog
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import app.androidarcache.ProgressDialog.showLoadingDialog
 import app.androidarcache.Utils.Companion.showLog
 import app.androidarcache.arCore.ARCore
 import app.androidarcache.arCore.OnARChangeListener
 import app.androidarcache.databinding.ActivityMainBinding
-import arCore.DownloadAR
 import com.google.ar.core.ArCoreApk
 import com.google.ar.core.Config
 import com.google.ar.core.Config.AugmentedFaceMode

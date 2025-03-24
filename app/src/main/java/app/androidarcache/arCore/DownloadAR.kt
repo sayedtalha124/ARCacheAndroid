@@ -1,4 +1,4 @@
-package arCore
+package app.androidarcache.arCore
 
 import android.app.Dialog
 import android.content.Context

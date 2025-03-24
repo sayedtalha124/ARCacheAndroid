@@ -14,6 +14,6 @@
     <string name="exception_device_not_compatible">This device does not support AR</string>
     <string name="exception_user_declined_installation">User declined installation</string>
     <string name="exception_unknown">Failed to create AR session</string>
-    <string name="ar_instructions">1. Move your phone slowly to scan your surroundings.\n2. Make sure your enviroment is well lighted.\n3. Use your fingers to operate the window.</string>
+    <string name="ar_instructions">1. Move your phone slowly to scan your surroundings.\n2. Make sure your environment is well lighted.\n3. Use your fingers to operate the window.</string>
 
 </resources>

@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.ProgressBar
 import androidx.core.content.ContextCompat
 import app.androidarcache.Utils.Companion.showLog
+import androidx.core.graphics.drawable.toDrawable
 
 object ProgressDialog {
     fun showLoadingDialog(context: Context): Dialog {
@@ -24,7 +25,7 @@ object ProgressDialog {
         try {
             progressDialog.apply {
                 window
-                    ?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+                    ?.setBackgroundDrawable(Color.TRANSPARENT.toDrawable())
                 setContentView(dialog)
                 setCancelable(false)
                 val activity = context as Activity

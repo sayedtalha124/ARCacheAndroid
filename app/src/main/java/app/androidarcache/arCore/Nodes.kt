@@ -1,20 +1,15 @@
 package app.androidarcache.arCore
 
 import android.content.Context
-import android.net.Uri
-import android.util.Log
 import android.view.MotionEvent
 import androidx.core.net.toUri
 import app.androidarcache.Utils.Companion.showLog
-
 import com.google.ar.core.Anchor
-import com.google.ar.core.Pose
 import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.ArSceneView
 import com.google.ar.sceneform.FrameTime
 import com.google.ar.sceneform.HitTestResult
 import com.google.ar.sceneform.assets.RenderableSource
-import com.google.ar.sceneform.collision.Box
 import com.google.ar.sceneform.math.Quaternion
 import com.google.ar.sceneform.math.Vector3
 import com.google.ar.sceneform.rendering.ModelRenderable
