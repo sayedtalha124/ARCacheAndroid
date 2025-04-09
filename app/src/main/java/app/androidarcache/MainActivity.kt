@@ -2,7 +2,10 @@ package app.androidarcache
 
 import android.Manifest.permission.CAMERA
 import android.app.Dialog
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import androidx.appcompat.app.AppCompatActivity
 import app.androidarcache.ProgressDialog.showLoadingDialog
 import app.androidarcache.Utils.Companion.showLog
@@ -22,7 +25,6 @@ import com.google.ar.core.Session
 import com.google.ar.core.exceptions.CameraNotAvailableException
 import com.google.ar.core.exceptions.UnavailableException
 import com.google.ar.sceneform.ArSceneView
-import fr.smarquis.ar_toolbox.redirectToApplicationSettings
 import kotlin.toString
 
 class MainActivity : AppCompatActivity(), OnARChangeListener {
@@ -67,7 +69,13 @@ class MainActivity : AppCompatActivity(), OnARChangeListener {
             redirectToApplicationSettings()
         }
     }
-
+    fun AppCompatActivity.redirectToApplicationSettings() {
+        val intent = Intent().apply {
+            action = Settings.ACTION_APPLICATION_DETAILS_SETTINGS
+            data = Uri.fromParts("package", packageName, null)
+        }
+        startActivity(intent)
+    }
     private var arCore: ARCore? = null
     override fun onPause() {
         super.onPause()
